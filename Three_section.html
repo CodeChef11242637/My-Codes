@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stylish Three Section Layout</title>
+    <link rel="stylesheet" href="Three_style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>🚀 Welcome to Code Learning
+        </h1>
+        <p>Learn all types of programming langage in this webpage like C, C++, Python and Java.</p>
+    </div>
+    <div class="main-container">
+        <div class="menu-left">
+            <a onclick="showContent('home')">🏠 Home</a>
+            <a onclick="showContent('about')">ℹ️ About</a>
+            <a onclick="showContent('contact')">📞 Contact</a>
+            <a onclick="showContent('c')">🔷 C</a>
+            <a onclick="showContent('cpp')">🔷 C++</a>
+            <a onclick="showContent('java')">☕ Java</a>
+            <a onclick="showContent('python')">🐍 Python</a>
+        </div>
+        <div class="display">
+            <div id="home" class="content active">
+                <h2>🏠 Home Page</h2>
+                <p>Discover our amazing website with a stylish layout.</p>
+            </div>
+            <div id="about" class="content">
+                <h2>ℹ️ About Us</h2>
+                <p>We are a team dedicated to providing useful web solutions with a sleek UI.</p>
+            </div>
+            <div id="contact" class="content">
+                <h2>📞 Contact Us</h2>
+                <p>Email: sharmaji9944@gmail.com</p>
+                <p>Phone: +91 8521003001</p>
+            </div>
+            <div id="c" class="content">
+                <h2>🔷 C Programming</h2>
+                <p>C is a powerful general-purpose programming language.</p>
+            </div>
+            <div id="cpp" class="content">
+                <h2>🔷 C++ Programming</h2>
+                <p>C++ is an extension of C with object-oriented features.</p>
+            </div>
+            <div id="java" class="content">
+                <h2>☕ Java</h2>
+                <h2>Java in Short</h2>
+                    Java is a high-level, object-oriented programming language dev
+                    eloped by Sun Microsystems (now Oracle) in 1995. It follows
+                     the Write Once, Run Anywhere (WORA) principle, making it platform-independent via the Java Virtual Machine (JVM).
+                    
+                    <p>Key Features:<br>
+                    ✅ Object-Oriented – Uses classes & objects<br>
+                    ✅ Platform-Independent – Runs on any OS with JVM<br>
+                    ✅ Secure & Robust – Built-in security & garbage collection<br>
+                    ✅ Multi-threaded – Supports concurrent execution</p>
+                    
+                    <h2>Basic Java Code:</h2>
+                    <p>java<br>
+                    Copy<br>
+                    Edit</p>
+                    public class Hello {<br>
+                        public static void main(String[] args) {<br>
+                            System.out.println("Hello, Java!");<br>
+                        }<br>
+                    }
+                    <h2>Uses of Java:</h2>
+                    <p>✔️ Web & Mobile Apps (Android)<br>
+                    ✔️ Enterprise Software<br>
+                    ✔️ Game Development<<br>
+                    ✔️ Cloud & Big Data</p>
+            </div>
+            <div id="python" class="content">
+                <h2>🐍 Python</h2>
+                <p>Python is an easy-to-learn, versatile programming language.</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showContent(section) {
+            document.querySelectorAll(".content").forEach(div => div.classList.remove("active"));
+            document.getElementById(section).classList.add("active");
+        }
+    </script>
+</body>
+</html>
